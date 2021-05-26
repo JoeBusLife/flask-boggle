@@ -1,0 +1,45 @@
+{% extends "base.html"  %}
+{% block title %}Boggle{% endblock %}
+
+{% block content %}
+{% if board %}
+<table>
+<tbody>
+	{% for row in board %}
+	<tr>
+		{% for c in row %}
+		<td>{{c}}</td>
+		{% endfor %}
+	</tr>
+	{% endfor %}
+</tbody>
+</table>
+
+<form id="guess-form" action="">
+	<label for="guess">Guess a word: </label>
+  <input id="guess" required type="text" placeholder="" name="guess">
+  <button>Submit!</button>
+</form>
+{% endif %}
+<div id="game-info">
+	<div id="count-down">60</div>
+	<div id="show-guess-result"></div>
+	<div id="score-label">Score: </div>
+	<div id="score">0</div>
+</div>
+<div id="games-info">
+	<div id="plays-label">Times Played: </div>
+	<div id="plays">{{plays}}</div>
+	<div id="high-score-label">High Score: </div>
+	<div id="high-score">{{high_score}}</div>
+</div>
+
+<form action="/game" id="game-start">
+	<button type="submit">restart</button>
+</form>
+<!-- {% if continue_btn %}
+<form action="/questions/{{next_q_id}}" id="survey-continue">
+	<button>Continue</button>
+</form>
+{% endif %} -->
+{% endblock %}

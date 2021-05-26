@@ -1,0 +1,108 @@
+#logo {
+	margin: 0px 20px;
+}
+
+h1 a {
+	text-decoration: none;
+	font-size: 2em;
+	opacity: 100;
+	background: rgb(112,9,121);
+	background: linear-gradient(180deg, rgb(82, 8, 90) 0%, rgb(134, 14, 148) 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#content {
+	margin: 20px 40px;
+}
+
+p {
+	font-size: 1.25em;
+}
+
+button {
+	margin-top: 10px;
+}
+
+table {
+	background-color: #0db4da;
+	padding: 3px;
+}
+
+td { 
+	background-color: #f3f3f3;
+	text-align: center;
+	/* font-weight: bold; */
+	width: 30px;
+	height: 30px;
+	padding: 2px;
+	margin: 3px;
+	font-size: 24px;
+}
+
+#guess-form {
+	font-size: 18px;
+	/* height: 34px; */
+}
+
+#game-info, #games-info {
+	position: relative;
+	width: 350px;
+	height: 40px;
+	margin: 10px 10px 10px 0px;
+	font-size: 24px;
+}
+
+#game-info div, #games-info div {
+	position: absolute;
+}
+
+#count-down {
+	/* position: absolute; */
+	left: 0px;
+	width: 40px;
+}
+
+#show-guess-result {
+	/* position: absolute; */
+	right: 130px;
+	width: 170px;
+	text-align: center;
+}
+
+#score-label {
+	/* position: absolute; */
+	right: 40px;
+	width: 70px;
+	text-align: right;
+}
+
+#score {
+	/* position: absolute; */
+	right: 0px;
+	width: 40px;
+	text-align: right;
+}
+
+#plays-label {
+	left: 0px;
+	width: 140px;
+}
+
+#plays {
+	left: 135px;
+	width: 40px;
+	text-align: right;
+}
+
+#high-score-label {
+	right: 40px;
+	width: 120px;
+	text-align: right;
+}
+
+#high-score {
+	right: 0px;
+	width: 40px;
+	text-align: right;
+}

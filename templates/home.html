@@ -1,0 +1,13 @@
+{% extends 'base.html'  %}
+{% block title %}Boggle{% endblock %}
+
+{% block content %}
+<h2>Select Game Size</h2>
+<form action="/game" id="game-start">
+	{% for size in sizes %}
+  <input type="radio" required name="size" value="{{size[0]}}">
+	<label for="{{size[0]}}">{{size[0]}}&emsp;{{size[1]}}</label><br>
+	{% endfor %}
+  <button>Submit!</button>
+</form>
+{% endblock %}
